@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Wingman';
+    src: url('styles/fonts/TAYWingman.woff2') format('woff2')
+         url('styles/fonts/TAYWingman.woff') format('woff'),
+         url('styles/fonts/TAYWingman.otf') format('opentype');
+    font-display: swap;
+    text-align:center
+  }
+  
+  body {
+    font-family: 'Wingman', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Wingman', serif;
+  }
+  
