@@ -30,6 +30,113 @@ img {
   padding: 5px;
 }
 
+.shelf-img {
+  display: block;
+  width: 35%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  margin-left: 55%;
+  padding: 0;
+}
+
+.plant-hover-wrap {
+  display: block;
+  position: relative;
+  width: 15%;
+  margin-bottom: 0;
+  margin-top: 2%;
+  margin-left: 55%;
+}
+.plant-hover-wrap img {
+  padding: 0;
+  display: block;
+  vertical-align: top;
+}
+.plant-hover-wrap .plant-default {
+  width: 100%;
+  height: auto;
+}
+.plant-hover-wrap .plant-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.plant-hover-wrap:hover .plant-hover {
+  opacity: 1;
+}
+
+.alfie-hover-wrap {
+  display: block;
+  position: relative;
+  width: 20%;
+  margin-top: 58%;
+  margin-left: 0;
+}
+.alfie-hover-wrap img {
+  padding: 0;
+  display: block;
+  vertical-align: top;
+}
+.alfie-hover-wrap .alfie-default {
+  width: 100%;
+  height: auto;
+}
+.alfie-hover-wrap .alfie-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.alfie-hover-wrap:hover .alfie-hover {
+  opacity: 1;
+}
+
+.macii-hover-wrap {
+  display: block;
+  position: relative;
+  width: 30%;
+  margin-top: 28%;
+  margin-left: 70%;
+}
+.macii-hover-wrap img {
+  padding: 0;
+  display: block;
+  vertical-align: top;
+}
+.macii-hover-wrap .macii-default {
+  width: 100%;
+  height: auto;
+}
+.macii-hover-wrap .macii-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.macii-hover-wrap:hover .macii-hover {
+  opacity: 1;
+}
+
     </style>
 </div>
             <meta charset="UTF-8">
@@ -55,16 +162,23 @@ img {
  
       <div class="row">
         <div class="column">
-        <a href="index2.html">
-          <img src="styles/images/macii.png"style="width:35%;margin-top:48%;margin-left:80%">
+        <a href="index4.html" class="plant-hover-wrap">
+        <img src="styles/images/plant.png" class="plant-default" alt="">
+        <img src="styles/images/plant_color.png" class="plant-hover" alt="">
+        </a>
+        <img src="styles/images/shelf.png" class="shelf-img" alt="">
+        <a href="index2.html" class="macii-hover-wrap">
+          <img src="styles/images/macii.png" class="macii-default" alt="Macii">
+          <img src="styles/images/macii_color.png" class="macii-hover" alt="">
         </a>
         </div>
         <div class="column">
           <img src="styles/images/cat_tree_doodle.png" style="width:100%;">
         </div>
         <div class="column">
-            <a href="index3.html">
-              <img src="styles/images/alfie.png"style="width:24%;margin-top:55%">
+            <a href="index3.html" class="alfie-hover-wrap">
+              <img src="styles/images/alfie.png" class="alfie-default" alt="Alfie">
+              <img src="styles/images/alfie_color.png" class="alfie-hover" alt="">
             </a>
             </div>
         

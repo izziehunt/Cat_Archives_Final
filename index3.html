@@ -5,15 +5,34 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Title</title>
         <style>
+            html, body {
+              height: 100%;
+              margin: 0;
+            }
+            body {
+              background-image: url('styles/images/star_back.jpg');
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .column {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
             img {
               display: block;
-              margin: auto;
+              max-width: 65%;
+              height: auto;
             }
             </style>
     </head>
     <body>
         <div class="column">
-            <img src="styles/images/alfie ID.png" style="width:40%;">
+            <img src="styles/images/alfie ID.png" alt="Alfie">
           </div>
     </body>
 </html>

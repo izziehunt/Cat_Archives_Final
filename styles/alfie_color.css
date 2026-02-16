@@ -1,0 +1,4 @@
+/* Makes the Alfie doodle appear orange */
+.alfie-color {
+  filter: sepia(0.8) saturate(3) hue-rotate(-15deg) brightness(1.05);
+}
