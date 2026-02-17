@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>cat.archives</title>
+        <style>
+            @font-face {
+                font-family: 'Wingman';
+                src: url('styles/fonts/TAYWingman.woff');
+            }
+            body {
+                margin: 0;
+                background-color: rgb(251, 247, 241);
+                font-family: 'Wingman', sans-serif;
+                text-align: center;
+                padding-top: 40px;
+            }
+            h1 {
+                font-family: 'Wingman';
+                font-size: 50px;
+                margin: 0 0 10px;
+            }
+            h2 {
+                font-family: 'Wingman';
+                margin: 0 0 30px;
+            }
+            .flower-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 220px;
+                max-width: calc(100% - 40px);
+                margin-left: 40px;
+                text-align: left;
+            }
+            .flower-list li {
+                margin-bottom: 20px;
+            }
+            .flower-name {
+                font-family: 'Wingman';
+                font-size: 20px;
+                margin: 0 0 6px;
+            }
+            .flower-list img {
+                display: block;
+                margin: 0;
+                max-width: 65%;
+                height: auto;
+                transition: transform 0.2s ease;
+            }
+            .flower-list img:hover {
+                transform: rotate(5deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CAT ARCHIVES</h1>
+        <h2>Have You Ever Wondered...</h2>
+
+        <ul class="flower-list">
+            <li>
+                <div class="flower-name">Lily</div>
+                <img src="styles/images/lily.png" alt="Lily">
+            </li>
+            <li>
+                <div class="flower-name">Tulip</div>
+                <img src="styles/images/tulip.png" alt="Tulip">
+            </li>
+            <li>
+                <div class="flower-name">Peony</div>
+                <img src="styles/images/peony.png" alt="Peony">
+            </li>
+            <li>
+                <div class="flower-name">Holly</div>
+                <img src="styles/images/holly.png" alt="Holly">
+            </li>
+        </ul>
+    </body>
+</html>
+
