@@ -25,14 +25,25 @@
                 font-family: 'Wingman';
                 margin: 0 0 30px;
             }
+            .lists-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 40px;
+                gap: 40px;
+            }
             .flower-list {
                 list-style: none;
                 padding: 0;
                 margin: 0;
                 width: 220px;
                 max-width: calc(100% - 40px);
-                margin-left: 40px;
                 text-align: left;
+            }
+            .flower-list.right-list {
+                margin-left: 0;
             }
             .flower-list li {
                 margin-bottom: 20px;
@@ -54,28 +65,38 @@
             }
         </style>
     </head>
-    <body>
-        <h1>CAT ARCHIVES</h1>
-        <h2>Have You Ever Wondered...</h2>
+    <h1>TOXIC v NON-TOXIC PLANTS</h1>
+        <h2>Protect Your Cats!</h2>
 
-        <ul class="flower-list">
-            <li>
-                <div class="flower-name">Lily</div>
-                <img src="styles/images/lily.png" alt="Lily">
-            </li>
-            <li>
-                <div class="flower-name">Tulip</div>
-                <img src="styles/images/tulip.png" alt="Tulip">
-            </li>
-            <li>
-                <div class="flower-name">Peony</div>
-                <img src="styles/images/peony.png" alt="Peony">
-            </li>
-            <li>
-                <div class="flower-name">Holly</div>
-                <img src="styles/images/holly.png" alt="Holly">
-            </li>
-        </ul>
+        <div class="lists-wrapper">
+            <ul class="flower-list">
+                <li>
+                    <div class="flower-name">Lily: TOXIC</div>
+                    <img src="styles/images/lily.png" alt="Lily">
+                </li>
+                <li>
+                    <div class="flower-name">Tulip: TOXIC</div>
+                    <img src="styles/images/tulip.png" alt="Tulip">
+                </li>
+                <li>
+                    <div class="flower-name">Peony: TOXIC</div>
+                    <img src="styles/images/peony.png" alt="Peony">
+                </li>
+                <li>
+                    <div class="flower-name">Holly: TOXIC</div>
+                    <img src="styles/images/holly.png" alt="Holly">
+                </li>
+            </ul>
+            <ul class="flower-list right-list">
+                <li>
+                    <div class="flower-name">Sunflower: NON-TOXIC</div>
+                    <img src="styles/images/sunflower.png" alt="Sunflower">
+                </li>
+                <li>
+                    <div class="flower-name">Orchid: NON-TOXIC</div>
+                    <img src="styles/images/orchid.png" alt="Orchid">
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
-

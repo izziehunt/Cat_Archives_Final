@@ -165,7 +165,7 @@ img {
             <h2 style="font-family:'Wingman';text-align:center">Have You Ever Wondered...</h2>
             <p style="font-family:'Wingman';text-align:center">What's Popular Amongst Cats Right Now?
             <br></br>
-           *Click a Cat!*
+           *Click Around!*
             </p>
             
        </div>
@@ -193,7 +193,39 @@ img {
               <img src="styles/images/alfie_color.png" class="alfie-hover" alt="">
             </a>
             </div>
-        
+
+        <script>
+            (function () {
+                var meow = new Audio('styles/audio/meow.mp3');
+                function playMeow() {
+                    meow.currentTime = 0;
+                    meow.play().catch(function () {});
+                }
+                var alfie = document.querySelector('.alfie-hover-wrap');
+                if (alfie) alfie.addEventListener('mouseenter', playMeow);
+            })();
+        </script>
+        <script>
+            (function () {
+                var meow = new Audio('styles/audio/meow2.mp3');
+                function playMeow() {
+                    meow.currentTime = 0;
+                    meow.play().catch(function () {});
+                }
+                var macii = document.querySelector('.macii-hover-wrap');
+                if (macii) macii.addEventListener('mouseenter', playMeow);
+            })();
+        </script>
+        <script>
+            (function () {
+                var rustle = new Audio('styles/audio/leaves.mp3');
+                function playrustle() {
+                    rustle.currentTime = 0;
+                    rustle.play().catch(function () {});
+                }
+                var plant = document.querySelector('.plant-hover-wrap');
+                if (plant) plant.addEventListener('mouseenter', playrustle);
+            })();
+        </script>
     </body>
 </html>
-
