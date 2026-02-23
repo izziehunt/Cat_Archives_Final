@@ -40,8 +40,8 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 6px;
-  margin-bottom: 6px;
+  gap: 4px;
+  margin-bottom: 1px;
 }
 
 .shelf-img {
@@ -97,6 +97,121 @@ img {
   opacity: 1;
 }
 
+.food-bag-hover-wrap {
+  display: block;
+  position: relative;
+  width: 24%;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.food-bag-hover-wrap:hover {
+  transform: rotate(5deg);
+}
+
+.food-bag-hover-wrap img {
+  padding: 0;
+  display: block;
+  vertical-align: top;
+}
+
+.food-bag-hover-wrap .food-bag-default {
+  width: 100%;
+  height: auto;
+}
+
+.food-bag-hover-wrap .food-bag-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.food-bag-hover-wrap:hover .food-bag-hover {
+  opacity: 1;
+}
+
+.catbed-hover-wrap {
+  display: block;
+  position: relative;
+  width: 50%;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.catbed-hover-wrap:hover {
+  transform: rotate(5deg);
+}
+
+.catbed-hover-wrap img {
+  padding: 0;
+  display: block;
+  vertical-align: top;
+}
+
+.catbed-hover-wrap .catbed-default {
+  width: 100%;
+  height: auto;
+}
+
+.catbed-hover-wrap .catbed-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.catbed-hover-wrap:hover .catbed-hover {
+  opacity: 1;
+}
+
+.alfie-column-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 55%;
+}
+
+.alfie-link {
+  width: 24%;
+  flex-shrink: 0;
+}
+
+.alfie-link img {
+  width: 100%;
+}
+
+.macii-column-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 55%;
+  padding-right: 5%;
+}
+
+.macii-link {
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.macii-link img {
+  width: 100%;
+}
+
 .row {
   display: flex;
 }
@@ -135,9 +250,15 @@ img {
   </div>
       <div class="row">
         <div class="column">
-          <a href="index2.html" class="macii-link">
-            <img src="styles/images/macii.png" class="hover-rotate" style="width:35%;margin-top:48%;margin-left:70%">
-          </a>
+          <div class="macii-column-content">
+            <a href="index6.html" class="food-bag-hover-wrap">
+              <img src="styles/images/food_bag_BW.png" class="food-bag-default" alt="Food Bag">
+              <img src="styles/images/food_bag.png" class="food-bag-hover" alt="">
+            </a>
+            <a href="index2.html" class="macii-link">
+              <img src="styles/images/macii.png" class="hover-rotate" alt="Macii">
+            </a>
+          </div>
         </div>
         <div class="column tree-column">
           <div class="shelf-wrapper">
@@ -158,9 +279,15 @@ img {
           <img src="styles/images/cat_tree_doodle.png" style="width:100%;">
         </div>
         <div class="column">
+          <div class="alfie-column-content">
             <a href="index3.html" class="alfie-link">
-              <img src="styles/images/alfie.png" class="hover-rotate" style="width:24%;margin-top:55%">
+              <img src="styles/images/alfie.png" class="hover-rotate" alt="Alfie">
             </a>
+            <div class="catbed-hover-wrap">
+              <img src="styles/images/catbed.png" class="catbed-default" alt="Cat Bed">
+              <img src="styles/images/catbed_color.png" class="catbed-hover" alt="">
+            </div>
+          </div>
         </div>
 
         <script>

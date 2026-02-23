@@ -9,94 +9,116 @@
                 font-family: 'Wingman';
                 src: url('styles/fonts/TAYWingman.woff');
             }
-            body {
+            * { box-sizing: border-box; }
+            html, body {
                 margin: 0;
-                background-color: rgb(251, 247, 241);
-                font-family: 'Wingman', sans-serif;
-                text-align: center;
-                padding-top: 40px;
-            }
-            h1 {
-                font-family: 'Wingman';
-                font-size: 50px;
-                margin: 0 0 10px;
-            }
-            h2 {
-                font-family: 'Wingman';
-                margin: 0 0 30px;
-            }
-            .lists-wrapper {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 0 40px;
-                gap: 40px;
-            }
-            .flower-list {
-                list-style: none;
                 padding: 0;
-                margin: 0;
-                width: 220px;
-                max-width: calc(100% - 40px);
-                text-align: left;
+                height: 100%;
+                overflow: auto;
             }
-            .flower-list.right-list {
-                margin-left: 0;
+            .page-container {
+                position: relative;
+                width: 100%;
+                min-height: 100vh;
+                min-height: 100dvh;
+                background-image: url('styles/images/grass.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                font-family: 'Wingman', sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
-            .flower-list li {
-                margin-bottom: 20px;
-            }
-            .flower-name {
+            .page-container h1 {
                 font-family: 'Wingman';
-                font-size: 20px;
-                margin: 0 0 6px;
+                font-size: clamp(24px, 4.5vw, 50px);
+                margin: 2vh 0 0.5vh;
+                text-align: center;
             }
-            .flower-list img {
-                display: block;
-                margin: 0;
-                max-width: 65%;
+            .page-container h2 {
+                font-family: 'Wingman';
+                font-size: clamp(16px, 2.5vw, 28px);
+                margin: 0 0 2vh;
+                text-align: center;
+            }
+            .plants-area {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                padding: 0 3vw 4vh;
+            }
+            .plant-row {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                gap: clamp(8px, 4vw, 60px);
+                width: 100%;
+                max-width: 1200px;
+            }
+            .plant-row.upper { margin-bottom: clamp(12px, 3vh, 40px); }
+            .plant-row.lower { margin-bottom: clamp(8px, 2vh, 24px); }
+            .plant-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 0 0 auto;
+            }
+            .plant-name {
+                font-family: 'Wingman';
+                font-size: clamp(12px, 1.8vw, 22px);
+                margin: 0 0 4px;
+                color: #1a1a1a;
+                text-shadow: 0 1px 2px rgba(255,255,255,0.9);
+            }
+            .plant-item img {
+                width: clamp(60px, 10vw, 140px);
                 height: auto;
                 transition: transform 0.2s ease;
             }
-            .flower-list img:hover {
+            .plant-item img:hover {
                 transform: rotate(5deg);
             }
         </style>
     </head>
-    <h1>TOXIC v NON-TOXIC PLANTS</h1>
-        <h2>Protect Your Cats!</h2>
+    <body>
+        <div class="page-container">
+            <h1>TOXIC v NON-TOXIC PLANTS</h1>
+            <h2>Protect Your Cats!</h2>
 
-        <div class="lists-wrapper">
-            <ul class="flower-list">
-                <li>
-                    <div class="flower-name">Lily: TOXIC</div>
-                    <img src="styles/images/lily.png" alt="Lily">
-                </li>
-                <li>
-                    <div class="flower-name">Tulip: TOXIC</div>
-                    <img src="styles/images/tulip.png" alt="Tulip">
-                </li>
-                <li>
-                    <div class="flower-name">Peony: TOXIC</div>
-                    <img src="styles/images/peony.png" alt="Peony">
-                </li>
-                <li>
-                    <div class="flower-name">Holly: TOXIC</div>
-                    <img src="styles/images/holly.png" alt="Holly">
-                </li>
-            </ul>
-            <ul class="flower-list right-list">
-                <li>
-                    <div class="flower-name">Sunflower: NON-TOXIC</div>
-                    <img src="styles/images/sunflower.png" alt="Sunflower">
-                </li>
-                <li>
-                    <div class="flower-name">Orchid: NON-TOXIC</div>
-                    <img src="styles/images/orchid.png" alt="Orchid">
-                </li>
-            </ul>
+            <div class="plants-area">
+                <div class="plant-row upper">
+                    <div class="plant-item">
+                        <div class="plant-name">Lily: TOXIC</div>
+                        <img src="styles/images/lily.png" alt="Lily">
+                    </div>
+                    <div class="plant-item">
+                        <div class="plant-name">Tulip: TOXIC</div>
+                        <img src="styles/images/tulip.png" alt="Tulip">
+                    </div>
+                    <div class="plant-item">
+                        <div class="plant-name">Peony: TOXIC</div>
+                        <img src="styles/images/peony.png" alt="Peony">
+                    </div>
+                    <div class="plant-item">
+                        <div class="plant-name">Holly: TOXIC</div>
+                        <img src="styles/images/holly.png" alt="Holly">
+                    </div>
+                </div>
+                <div class="plant-row lower">
+                    <div class="plant-item">
+                        <div class="plant-name">Sunflower: NON-TOXIC</div>
+                        <img src="styles/images/sunflower.png" alt="Sunflower">
+                    </div>
+                    <div class="plant-item">
+                        <div class="plant-name">Orchid: NON-TOXIC</div>
+                        <img src="styles/images/orchid.png" alt="Orchid">
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
