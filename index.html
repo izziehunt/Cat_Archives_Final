@@ -40,8 +40,8 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 4px;
-  margin-bottom: 1px;
+  gap: 6px;
+  margin-bottom: 6px;
 }
 
 .shelf-img {
@@ -97,22 +97,68 @@ img {
   opacity: 1;
 }
 
-.food-bag-hover-wrap {
+.window-hover-wrap {
   display: block;
-  position: relative;
-  width: 24%;
-  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 40%;
+  pointer-events: auto;
   transition: transform 0.2s ease;
+  z-index: 1;
 }
 
-.food-bag-hover-wrap:hover {
-  transform: rotate(5deg);
+.window-hover-wrap img {
+  padding: 0;
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.window-hover-wrap .window-default {
+  width: 100%;
+  height: auto;
+}
+
+.window-hover-wrap .window-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.window-hover-wrap:hover .window-hover {
+  opacity: 1;
+}
+
+.food-bag-hover-wrap {
+  position: absolute;
+  bottom: 12%;
+  left: 45%;
+  width: 22%;
+  display: block;
+  pointer-events: auto;
+  transition: transform 0.2s ease;
 }
 
 .food-bag-hover-wrap img {
   padding: 0;
   display: block;
   vertical-align: top;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .food-bag-hover-wrap .food-bag-default {
@@ -137,30 +183,34 @@ img {
   opacity: 1;
 }
 
-.catbed-hover-wrap {
+.bed-hover-wrap {
   display: block;
-  position: relative;
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  bottom: 12%;
+  right: 5%;
   width: 50%;
-  flex-shrink: 0;
+  display: block;
+  pointer-events: auto;
   transition: transform 0.2s ease;
 }
 
-.catbed-hover-wrap:hover {
-  transform: rotate(5deg);
-}
-
-.catbed-hover-wrap img {
+.bed-hover-wrap img {
   padding: 0;
   display: block;
   vertical-align: top;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-.catbed-hover-wrap .catbed-default {
+.bed-hover-wrap .bed-default {
   width: 100%;
   height: auto;
 }
 
-.catbed-hover-wrap .catbed-hover {
+.bed-hover-wrap .bed-hover {
   position: absolute;
   left: 0;
   top: 0;
@@ -173,47 +223,17 @@ img {
   pointer-events: none;
 }
 
-.catbed-hover-wrap:hover .catbed-hover {
+.bed-hover-wrap:hover .bed-hover {
   opacity: 1;
 }
 
-.alfie-column-content {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  margin-top: 55%;
-}
-
-.alfie-link {
-  width: 24%;
-  flex-shrink: 0;
-}
-
-.alfie-link img {
-  width: 100%;
-}
-
-.macii-column-content {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 10px;
-  margin-top: 55%;
-  padding-right: 5%;
-}
-
-.macii-link {
-  width: 35%;
-  flex-shrink: 0;
-}
-
-.macii-link img {
-  width: 100%;
+.bed-hover-wrap:hover {
+  transform: rotate(5deg);
 }
 
 .row {
   display: flex;
+  position: relative;
 }
 
 /* Create three equal columns that sits next to each other */
@@ -249,16 +269,14 @@ img {
        
   </div>
       <div class="row">
-        <div class="column">
-          <div class="macii-column-content">
-            <a href="index6.html" class="food-bag-hover-wrap">
-              <img src="styles/images/food_bag_BW.png" class="food-bag-default" alt="Food Bag">
+        <div class="column" style="position:relative">
+          <div class="food-bag-hover-wrap hover-rotate">
+              <img src="styles/images/food_bag_BW.png" class="food-bag-default" alt="Cat Food">
               <img src="styles/images/food_bag.png" class="food-bag-hover" alt="">
-            </a>
-            <a href="index2.html" class="macii-link">
-              <img src="styles/images/macii.png" class="hover-rotate" alt="Macii">
-            </a>
-          </div>
+            </div>
+          <a href="index2.html" class="macii-link">
+            <img src="styles/images/macii.png" class="hover-rotate" style="width:35%;margin-top:48%;margin-left:70%">
+          </a>
         </div>
         <div class="column tree-column">
           <div class="shelf-wrapper">
@@ -278,16 +296,18 @@ img {
           </div>
           <img src="styles/images/cat_tree_doodle.png" style="width:100%;">
         </div>
-        <div class="column">
-          <div class="alfie-column-content">
+        <div class="column" style="position:relative">
+            <a href="index8.html" class="window-hover-wrap">
+              <img src="styles/images/window.png" class="window-default" alt="Window">
+              <img src="styles/images/window_color.png" class="window-hover" alt="">
+            </a>
             <a href="index3.html" class="alfie-link">
-              <img src="styles/images/alfie.png" class="hover-rotate" alt="Alfie">
+              <img src="styles/images/alfie.png" class="hover-rotate" style="width:24%;margin-top:55%">
             </a>
-            <a href="index7.html" class="catbed-hover-wrap">
-              <img src="styles/images/catbed.png" class="catbed-default" alt="Cat Bed">
-              <img src="styles/images/catbed_color.png" class="catbed-hover" alt="">
+            <a href="index7.html" class="bed-hover-wrap">
+              <img src="styles/images/catbed.png" class="bed-default" alt="Cat Bed">
+              <img src="styles/images/catbed_color.png" class="bed-hover" alt="">
             </a>
-          </div>
         </div>
 
         <script>
