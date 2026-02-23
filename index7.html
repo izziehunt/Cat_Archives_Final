@@ -2,10 +2,150 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>cat.archives - Sleeping Habits</title>
+        <style>
+            @font-face {
+                font-family: 'Wingman';
+                src: url('styles/fonts/TAYWingman.woff');
+            }
+            * { box-sizing: border-box; }
+            body {
+                margin: 0;
+                background-color: rgb(210, 216, 224);
+                font-family: 'Wingman', sans-serif;
+                min-height: 100vh;
+                position: relative;
+                overflow-x: hidden;
+            }
+            .stars-bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: 0;
+            }
+            .stars-bg img {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                opacity: 0.5;
+            }
+            .stars-bg img:nth-child(1) { top: 8%; left: 5%; }
+            .stars-bg img:nth-child(2) { top: 12%; left: 25%; }
+            .stars-bg img:nth-child(3) { top: 6%; left: 45%; }
+            .stars-bg img:nth-child(4) { top: 15%; left: 65%; }
+            .stars-bg img:nth-child(5) { top: 5%; left: 85%; }
+            .stars-bg img:nth-child(6) { top: 25%; left: 10%; }
+            .stars-bg img:nth-child(7) { top: 30%; left: 55%; }
+            .stars-bg img:nth-child(8) { top: 22%; left: 90%; }
+            .stars-bg img:nth-child(9) { top: 45%; left: 3%; }
+            .stars-bg img:nth-child(10) { top: 50%; left: 40%; }
+            .stars-bg img:nth-child(11) { top: 48%; left: 75%; }
+            .stars-bg img:nth-child(12) { top: 55%; left: 95%; }
+            .stars-bg img:nth-child(13) { top: 65%; left: 15%; }
+            .stars-bg img:nth-child(14) { top: 70%; left: 50%; }
+            .stars-bg img:nth-child(15) { top: 68%; left: 85%; }
+            .stars-bg img:nth-child(16) { top: 80%; left: 8%; }
+            .stars-bg img:nth-child(17) { top: 85%; left: 35%; }
+            .stars-bg img:nth-child(18) { top: 82%; left: 60%; }
+            .stars-bg img:nth-child(19) { top: 88%; left: 92%; }
+            .stars-bg img:nth-child(20) { top: 35%; left: 20%; }
+            .stars-bg img:nth-child(21) { top: 40%; left: 90%; }
+            .stars-bg img:nth-child(22) { top: 75%; left: 25%; }
+            .stars-bg img:nth-child(23) { top: 18%; left: 70%; }
+            .stars-bg img:nth-child(24) { top: 92%; left: 45%; }
+            .content {
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+            }
+            h1 {
+                font-family: 'Wingman';
+                font-size: 50px;
+                margin: 0 0 10px;
+            }
+            h2 {
+                font-family: 'Wingman';
+                font-size: 36px;
+                margin: 0 0 40px;
+            }
+            .content-section {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                max-width: 900px;
+                margin-bottom: 50px;
+            }
+            .content-section:last-child {
+                margin-bottom: 0;
+            }
+            .content-section.reverse {
+                flex-direction: row-reverse;
+            }
+            .content-section img {
+                width: 240px;
+                flex-shrink: 0;
+                height: auto;
+            }
+            .content-section .text {
+                flex: 1;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
     </head>
     <body>
-        
+        <div class="stars-bg" aria-hidden="true">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+            <img src="styles/images/star.png" alt="">
+        </div>
+
+        <div class="content">
+            <h1>CAT ARCHIVES</h1>
+            <h2>Sleeping Habits</h2>
+
+            <div class="content-section">
+                <img src="styles/images/sleepcat1.png" alt="Sleeping Cat 1">
+                <p class="text"><strong>Why cats sleep so much:</strong><br><br>Cats sleep between 12–18 hours a day because their bodies are built for bursts of intense energy followed by long periods of rest. Even indoor cats keep the instincts of their wild ancestors, conserving energy in case they need to "hunt." Sleep also helps them grow, heal, and process stress, which is why kittens, seniors, and anxious cats often nap even more.</p>
+            </div>
+
+            <div class="content-section reverse">
+                <img src="styles/images/sleepcat2.png" alt="Sleeping Cat 2">
+                <p class="text"><strong>Tips for creating a comfy sleep environment</strong><br><br>Give your cat multiple cozy spots around your home so they can choose where they feel safest. Soft bedding, warm sunlight, and elevated perches often make ideal nap zones. Keep their resting spaces quiet, clean, and away from drafts. Adding familiar scents, like their blanket or a piece of your clothing, can also help them relax and settle into deeper sleep.</p>
+            </div>
+
+            <div class="content-section">
+                <img src="styles/images/sleepcat3.png" alt="Sleeping Cat 3">
+                <p class="text"><strong>Best sleeping positions & what they mean:</strong><br><br>A cat curled tightly into a ball is trying to stay warm or feel secure. When they sleep on their back with their belly exposed, it usually means they feel completely safe in their environment. The loaf position (paws tucked under) shows a light, quick nap, while sprawling on their side signals deep relaxation. Each pose reveals how comfortable and trusting they feel.</p>
+            </div>
+        </div>
     </body>
 </html>
