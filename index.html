@@ -98,14 +98,11 @@ img {
 }
 
 .window-hover-wrap {
-  display: block;
-  text-decoration: none;
-  color: inherit;
   position: absolute;
-  bottom: 50%;
+  top: -20%;
   left: 40%;
   transform: translateX(-50%);
-  width: 40%;
+  width: 45%;
   pointer-events: auto;
   transition: transform 0.2s ease;
   z-index: 1;
@@ -144,9 +141,9 @@ img {
 
 .food-bag-hover-wrap {
   position: absolute;
-  bottom: 12%;
-  left: 45%;
-  width: 22%;
+  bottom: 15%;
+  left: 55%;
+  width: 18%;
   display: block;
   pointer-events: auto;
   transition: transform 0.2s ease;
@@ -184,13 +181,10 @@ img {
 }
 
 .bed-hover-wrap {
-  display: block;
-  text-decoration: none;
-  color: inherit;
   position: absolute;
   bottom: 12%;
-  right: 5%;
-  width: 50%;
+  right: 8%;
+  width: 70%;
   display: block;
   pointer-events: auto;
   transition: transform 0.2s ease;
@@ -225,10 +219,6 @@ img {
 
 .bed-hover-wrap:hover .bed-hover {
   opacity: 1;
-}
-
-.bed-hover-wrap:hover {
-  transform: rotate(5deg);
 }
 
 .row {
@@ -270,13 +260,12 @@ img {
   </div>
       <div class="row">
         <div class="column" style="position:relative">
-          <div class="food-bag-hover-wrap hover-rotate">
+          <a href="index6.html" class="food-bag-hover-wrap hover-rotate">
               <img src="styles/images/food_bag_BW.png" class="food-bag-default" alt="Cat Food">
               <img src="styles/images/food_bag.png" class="food-bag-hover" alt="">
-              <a href="index6.html" class="food-bag-link">
-            </div>
+            </a>
           <a href="index2.html" class="macii-link">
-            <img src="styles/images/macii.png" class="hover-rotate" style="width:35%;margin-top:48%;margin-left:70%">
+            <img src="styles/images/macii.png" class="hover-rotate" style="width:35%;margin-top:48%;margin-left:72%">
           </a>
         </div>
         <div class="column tree-column">
@@ -305,10 +294,11 @@ img {
             <a href="index3.html" class="alfie-link">
               <img src="styles/images/alfie.png" class="hover-rotate" style="width:24%;margin-top:55%">
             </a>
-            <a href="index7.html" class="bed-hover-wrap">
+            <div class="bed-hover-wrap">
+                <a href="index7.html" class="bed-hover-wrap">
               <img src="styles/images/catbed.png" class="bed-default" alt="Cat Bed">
               <img src="styles/images/catbed_color.png" class="bed-hover" alt="">
-            </a>
+            </div>
         </div>
 
         <script>
