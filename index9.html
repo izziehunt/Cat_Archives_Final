@@ -2,10 +2,87 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>cat.archives</title>
+        <style>
+            @font-face {
+                font-family: 'Wingman';
+                src: url('styles/fonts/TAYWingman.woff');
+            }
+            * { box-sizing: border-box; }
+            body {
+                margin: 0;
+                background-color: rgb(251, 247, 241);
+                font-family: 'Wingman', sans-serif;
+                min-height: 100vh;
+                position: relative;
+                overflow-x: hidden;
+            }
+            .content {
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+            }
+            h1 {
+                font-family: 'Wingman';
+                font-size: 50px;
+                margin: 0 0 10px;
+            }
+            h2 {
+                font-family: 'Wingman';
+                font-size: 36px;
+                margin: 0 0 40px;
+            }
+            .content-section {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                max-width: 900px;
+                margin-bottom: 50px;
+            }
+            .content-section:last-child {
+                margin-bottom: 0;
+            }
+            .content-section.reverse {
+                flex-direction: row-reverse;
+            }
+            .content-section img {
+                width: 240px;
+                flex-shrink: 0;
+                height: auto;
+            }
+            .content-section.reverse img {
+                width: 200px;
+            }
+            .content-section .text {
+                flex: 1;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
     </head>
     <body>
-        
+        <div class="content">
+            <h1>CAT ARCHIVES</h1>
+            <h2>Why Cats Love Being Brushed</h2>
+
+            <div class="content-section">
+                <img src="styles/images/brush1.png" alt="Cat Brush">
+                <p class="text"><strong>Bonding through grooming</strong><br><br>Cats spend a lot of time grooming themselves, and when you brush them, you're participating in a natural social behavior. Regular brushing strengthens your bond, reduces shedding, and helps prevent hairballs. Most cats come to enjoy the attention and relaxation that comes with a gentle brushing session.</p>
+            </div>
+
+            <div class="content-section reverse">
+                <img src="styles/images/brush2.png" alt="Cat Brush">
+                <p class="text"><strong>Choosing the right brush</strong><br><br>Different brushes work for different coat types. Slicker brushes are great for medium to long-haired cats, while bristle or rubber brushes suit short-haired cats. Start with soft, gentle strokes and always brush in the direction of the fur. Let your cat get used to the brush before longer sessions.</p>
+            </div>
+
+            <div class="content-section">
+                <img src="styles/images/brush3.png" alt="Cat Brush">
+                <p class="text"><strong>Making brushing a positive experience</strong><br><br>Brush your cat when they're relaxed—after a meal or a play session works well. Use treats and praise to create positive associations. Keep sessions short at first and gradually increase as your cat gets comfortable. A calm, patient approach turns brushing into quality time you both look forward to.</p>
+            </div>
+        </div>
     </body>
 </html>
